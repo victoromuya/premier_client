@@ -41,28 +41,26 @@ def signup(request):
 
 
 def django(request):
-        
     return render(request, 'django.html')
 
 def frontend(request):
-        
     return render(request, 'basic-fronthend.html')
 
 def science(request):
-        
     return render(request, 'data-science.html')
 
 def data(request):
-        
     return render(request, 'data-analysis.html')
 
 def python(request):
-        
     return render(request, 'python.html')
 
 def react(request):
-        
     return render(request, 'react.html')
 
 
+def bs(request):
+    return render(request, 'bs.html')
 
+def events(request):
+    return render(request, 'events.html')

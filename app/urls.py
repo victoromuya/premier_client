@@ -5,5 +5,9 @@ from . import views
 urlpatterns = [
     path('',  views.home, name='home'),
     path('signup/', views.signup, name="signup" ),
-    path('django/', views.django, name='django')
+    path('events/', views.events, name="events" ),
+    path('business/', views.bs, name="business" ),
+    
+    
+    path('django/', views.django, name='django'),
 ]

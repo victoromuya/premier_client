@@ -1,155 +1,330 @@
 #about, #courses, #contact{
-            color: rgb(58, 57, 57);
-            font-size: 15px;
-        }
-        #about:hover, #courses:hover, #contact:hover{
-            color: #F14D5D;
-        }
+        color: rgb(58, 57, 57);
+        font-size: 15px;
+    }
+    #about:hover, #courses:hover, #contact:hover{
+        color: #F14D5D;
+    }
 
-        #nav-active{
-            color: rgb(58, 57, 57) ;
-            font-size: 15px;
-        }
+    #nav-active{
+        color: rgb(58, 57, 57) ;
+        font-size: 15px;
+    }
 
-        #nav-active:hover{
-            color: #F14D5D;
-        }
+    #nav-active:hover{
+        color: #F14D5D;
+    }
 
-        .cards{
-            text-align: center; width:65%; margin: 20px; display: flex; color: white;
-            margin-left: 12%;
-          }
-          
-          .card-items{
-            max-width: 320px;
-            min-width: 320px;
-            min-height: 150px;;
-            border-radius: 10px; 
-            margin-right:40px;
-            margin-bottom: 40px;
-            padding: 70px 20px 30px 20px;
-          }
-
-         .card-items:hover{
-            background-color: aquamarine;
-         }
-
-        .card-items h2{
-            color: white;
-            font-size: 19px;
-          }
-        
-        .card-items h2:hover{
-            color: black;
+    .cards{
+        text-align: center; width:65%; margin: 20px; display: flex; color: white;
+        margin-left: 12%;
         }
         
-        .cards a:hover{
-            text-decoration: none;
+        .card-items{
+        max-width: 320px;
+        min-width: 320px;
+        min-height: 150px;;
+        border-radius: 10px; 
+        margin-right:40px;
+        margin-bottom: 40px;
+        padding: 70px 20px 30px 20px;
         }
 
-        .messages{
-            background-color: aquamarine;
-            padding: 20px;
+        .card-items:hover{
+        background-color: aquamarine;
         }
 
-    /*------------  Details Page -------------*/
+    .card-items h2{
+        color: white;
+        font-size: 19px;
+        }
     
-         #main-doc{
-               display:flex;
-               max-width: 100%;
-               width:95%;
-               margin-top: 40px;
-               margin-left: 20px;
-               font-size:16px;
-             }
-             #main-body
-            {
-                display:flex;
-                flex-direction:column;
-                width:80%;
-                padding:20px;
-                align-self:flex-start;
-                background:#fcfcfc;
-              
-               font-size:16px;
-               }
+    .card-items h2:hover{
+        color: black;
+    }
+    
+    .cards a:hover{
+        text-decoration: none;
+    }
 
-            .toggle-btn{
-                width: 35px;
-                position: absolute;
-                left: 20px;
-                top: 170px;
-                display: none;
-            }
+    .messages{
+        background-color: aquamarine;
+        padding: 20px;
+    }
 
-            .toggle-btn span{
-                display: inline-block;
-                width: 100%;
-                height: 2px;
-                background-color: black;
-                float: left;
-                margin-bottom: 8px;
-                
+/*------------  Details Page -------------*/
 
-            }
-           
-            #navbar{
-                
-                width:20%;
-                display:flex;
-                flex-direction:column;
-                /* background:#cccccc; */
-                font-size:16px;
-                margin-bottom: 0px;
-                }
-            
-            #navbar header{
-                padding-top: 20px;
-                padding-left: 10px;
-            }
+#main-doc{
+    display:flex;
+    max-width: 100%;
+    width:95%;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size:16px;
+    }
+    #main-body
+{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    padding:20px;
+    align-self:flex-start;
+    background:#fcfcfc;
+    
+    font-size:16px;
+    }
 
-            #navbar ul{
-                padding-left: 0px;
-                padding-top: 30px;
-            }
-             #navbar ul li{
-               list-style-type:none;
-               padding:10px;
-               border-bottom:1px solid white;
-             
-            }
-            #navbar header h4{
-               text-align:left;
-               color: white;
-            }
-            #navbar a{
-              text-decoration:none;
-              color: white;
-              }
-            /* MOBILE Layout */
-            @media(max-width:991px)
-            {
-            #main-body{
-             background: white;
-             }
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    left: 20px;
+    top: 170px;
+    display: none;
+}
 
-             .toggle-btn{
-                display: block;
-             }
-             #navbar{
-                display: none;
-                margin-top: 30px;
-                padding-top: 20px;
-                width: 90%;
-             }
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 8px;
+    float: left;
+}
 
-             #navbar.show{
-                display:block;
-             }
+.btoggle-btn{
+    width: 35px;
+    position: absolute;
+    left: 170px;
+    top: 700px;
+    display: none;
+}
 
-             #main-doc{
-                display: block;
-                flex-direction: row;
-             }
-             }
+.btoggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 8px;
+    float: left;
+}
+
+#navbar{
+    width:20%;
+    display:flex;
+    flex-direction:column;
+    /* background:#cccccc; */
+    font-size:16px;
+    margin-bottom: 0px;
+    }
+
+#navbar header{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#navbar ul{
+    padding-left: 0px;
+    padding-top: 30px;
+}
+    #navbar ul li{
+    list-style-type:none;
+    padding:10px;
+    border-bottom:1px solid white;
+    
+}
+#navbar header h4{
+    text-align:left;
+    color: white;
+}
+#navbar a{
+    text-decoration:none;
+    color: white;
+    }
+
+#bus-body{
+    display: none;
+}
+
+.business-body{
+    max-width: 100%; align-items: center; padding-left:150px;
+}
+
+
+
+/* MOBILE Layout */
+
+
+@media (max-width:1024px){
+    .business-body{
+        padding-left: 0px;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:991px)
+
+{
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 445px;
+        top: 400px;
+       
+    }
+#main-body{
+    background: white;
+    }
+
+    .toggle-btn{
+    display: block;
+    }
+
+    .btoggle-btn{
+        display: block;
+    }
+    #navbar{
+    display: none;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 90%;
+    }
+
+    #navbar.show{
+    display:block;
+    }
+
+    #business-mobile{
+        display: none;
+    }
+
+    #bus-body.show{
+    display: block;
+    }
+
+    #main-doc{
+    display: block;
+    flex-direction: row;
+    }
+
+    .business-header{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #business p{
+        text-align: justify;
+       
+    }
+
+    .business-body {
+       display: none;
+    }
+
+    .business-mobile{
+        display: contents;
+    }
+
+    .business-contact{
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+}
+
+@media (max-width:820px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 390px;
+        top: 420px;
+    }
+
+}
+
+@media (max-width:768px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 370px;
+        top: 420px;
+    }
+
+}
+
+
+@media (max-width:540px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 255px;
+        top: 510px;
+    }
+
+}
+
+@media (max-width:414px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 190px;
+        top: 640px;
+       
+    }
+
+}
+
+@media (max-width:393px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 175px;
+        top: 710px;
+        
+    }
+
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:360px){
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 165px;
+        top: 820px;
+        
+    }
+
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:280px){
+    .business-header{
+        max-width: 100%;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    .btoggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 125px;
+        top: 1190px;
+      
+    }
+}
+
+
          

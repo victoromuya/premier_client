@@ -74,10 +74,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0" style="padding-left: 50%;">
-                        <a href="#" class="nav-item nav-link active" id="nav-active">home</a>
-                        <a href="#event" class="nav-item nav-link" id="about">events</a>
+                        <a href="{% url 'home' %}" class="nav-item nav-link active" id="nav-active">home</a>
+                        <a href="{% url 'events' %}" class="nav-item nav-link" id="about">events</a>
                         <a href="{% url 'signup' %}" class="nav-item nav-link" id="courses">training</a>
-                        <a href="#website" class="nav-item nav-link" id="courses">business solutions</a>
+                        <a href="{% url 'business' %}" class="nav-item nav-link" id="courses">business solutions</a>
                     </div>
                     
                    
