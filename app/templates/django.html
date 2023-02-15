@@ -1,0 +1,175 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}django info{% endblock %}
+{%  block content %}
+
+
+<main id="main-doc">
+
+    <div class="toggle-btn" onclick="myfunction();">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<nav id="navbar" class="bg-primary">
+
+        <header>
+            <h4>Django Training</h4>
+        </header>
+
+
+  <ul >
+    <li><a href="#introduction" class="nav-link"  onclick="viewIntro()">About Django</a></li>
+    <li><a href="#schedule" class="nav-link" onclick="viewSchedule()">Schedule</a></li>
+    <li><a href="#payment" class="nav-link" onclick="viewPayment()">Cost and Payment Plans</a></li>
+
+    <li>
+        <div class="mx-auto mb-5 mt-5" style="width: 70%; max-width: 600px;">
+            <a href="#register" onclick="courseFunction();" class="btn btn-secondary py-3 d-lg-block"
+             style="font-size:20px; color: white;">SignUp now</a>
+        </div>
+    </li>
+
+  </ul>
+</nav>
+<section id="main-body">
+  <section class="main-section" id="introduction" style="display: show;">
+      <header>
+	  <h2>What is Django</h2>
+	  </header>
+	  <article>
+	  <p>Django is .....</p>
+      <h4>What will you achieve at the end of the training?</h4>
+	  <ul>
+	    <li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	  </ul>
+	  <p>.</p>
+	  </article>
+  </section>
+  
+  <section class="main-section" id="schedule" style= 'display:none'>
+  <header>
+	  <h2>Course Duration and Plans</h2>
+	  </header>
+	  <article>
+	  <p>This course takes 3 months to complete
+	  <code></code></p>
+	  <p></p>
+	  <pre><code>
+	 
+	  </code></pre>
+	  <p>Lecture days are at your ouwn discretion. Lecture holds 3 times in a week</p>
+	  <pre><code>
+	    
+	  </code></pre>
+	  </article>
+  </section>
+
+
+  <br>
+  <section class="main-section" id="payment" style= 'display:none'>
+        <header>
+	  <h2>Cost and Payment</h2>
+	  </header>
+	  <article>
+	  <p>50% payment is expected to be made before the start of training while the balance is expected to be 
+        completed by 6 weeks.
+      </p>
+	  <p>This course goes for 1000 dollars only.</p>
+	  </article>
+  </section>
+
+  </section>
+</main>
+
+
+
+<div class="row justify-content-center bg-image mx-0 mb-5" id="register" style="margin-top: 70px;">
+    <div class="col-lg-6 py-5">
+        <div class="bg-white p-5 my-5">
+            <h1 class="text-center mb-4">30% Off For New Students</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-light border-0" name = "name" placeholder="Your Name" style="padding: 30px 20px;">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control bg-light border-0" name = "email" placeholder="Your Email" style="padding: 30px 20px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select class="custom-select bg-light border-0 px-3" name = "course" id="courseid" style="height: 60px;">
+                                <option selected >Select a course</option>
+                                <option value="1">PYTHON</option>
+                                <option value="2">DATA SCIENCE</option>
+                                <option value="3">DATA ANALYSIS</option>
+                                <option value="3">HTML/CSS/BOOTSTAP</option>
+                                <option value="3">REACT JS</option>
+                                <option value="3">Python Web Develpoment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign Up Now</button>
+                    </div>
+                </div>
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+                        {{ message }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            </form>
+        </div>
+    </div>
+
+
+
+<script>
+    function viewIntro() { 
+        document.getElementById('introduction').setAttribute('style', 'display:show'); 
+        document.getElementById('schedule').setAttribute('style', 'display:none'); 
+        document.getElementById('payment').setAttribute('style', 'display:none'); 
+    }  
+
+    function viewSchedule() { 
+        document.getElementById('schedule').setAttribute('style', 'display:show'); 
+        document.getElementById('payment').setAttribute('style', 'display:none'); 
+        document.getElementById('introduction').setAttribute('style', 'display:none'); 
+    }  
+
+    function viewPayment() { 
+        document.getElementById('payment').setAttribute('style', 'display:show'); 
+        document.getElementById('schedule').setAttribute('style', 'display:none'); 
+        document.getElementById('introduction').setAttribute('style', 'display:none'); 
+    }  
+
+    function myfunction(){
+        navbar = document.getElementById('navbar');
+        navbar.classList.toggle("show")
+
+    }
+
+    function courseFunction(){
+       
+        document.getElementById("courseid").selectedIndex = "6";
+    }
+
+</script>
+
+{%  endblock %}

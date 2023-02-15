@@ -1,126 +1,8 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>premierlead</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-    <style>
-        #about, #courses, #contact{
-            color: #F14D5D;
-        }
-        #about:hover, #courses:hover, #contact:hover{
-            color: white;
-        }
-
-        #nav-active{
-            color: white ;
-        }
-
-        #nav-active:hover{
-            color: #F14D5D ;
-        }
-
-        .cards{
-            text-align: center; width:65%; margin: 20px; display: flex; color: white;
-            margin-left: 12%;
-          }
-          
-          .card-items{
-            max-width: 320px;
-            min-width: 320px;
-            min-height: 150px;;
-            border-radius: 10px; 
-            margin-right:40px;
-            margin-bottom: 40px;
-            padding: 70px 20px 30px 20px;
-          }
-
-        .card-items h2{
-            color: white;
-            font-size: 19px;
-          }
-        
-        .cards a:hover{
-            text-decoration: none;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-white">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-dark">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-dark pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-1">
-                <h2 class="m-0 text-white"><i class="fa fa-book-reader mr-1"></i>Premierelead</h2>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-1">
-                <div class="navbar-nav mx-auto py-0" style="padding-left: 30%;">
-                    <a href="#" class="nav-item nav-link active" id="nav-active">Home</a>
-                    <a href="#aboutus" class="nav-item nav-link" id="about">About</a>
-                    <a href="#our-course" class="nav-item nav-link" id="courses">Courses</a>
-                </div>
-                <a href="#our-contact" class="btn btn-secondary py-2 px-4 d-none d-lg-block">In need of a website or a mobile app?</a>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
+{% block content %}
+   
     <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 10px;">
         <div class="owl-carousel team-carousel">
             <div class="container text-center my-5 py-5">
@@ -159,40 +41,51 @@
     <!-- Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-3" id="aboutme">
+    <!-- About Start 
+    <div class="container-fluid py-3" id="aboutus" style="width: 100%;">
         <div class="container py-2">
-            <div class="row">
+            <div class="row" style="padding-left: 60px;">
                 
-                <div class="col-lg-12">
+                <div class="col-lg-11">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
-                        <h1 class="display-4" style="text-align: center;">First Choice For Online Education Anywhere</h1>
+                        <h1 class="display-5" style="text-align: center;">Enhancing major transformations in the Tech Industry since 2020</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p style="text-align: justify;"><strong>PremiereLead Tech Consult</strong> is an innovation and consulting company that offers one of the very best 
+                    services in the world of tech. Our growth has been phenomenal. We have developed and provided numerous solutions
+                ranging from web applications to artificial intelligence which includes machine learning projects. 
+            We have also consulted for SMEs and large scale businesses. Our training program is very much up to the industry standard as we deliver
+         the best content with great and consistent strategies that helps each student learn quickly and grasp every concept.  </p>
+
+         <p style="text-align: justify;">
+            Our intention is to transform the world of technology. Create a world of possibilities
+            and solve problems even as we raise problem solvers. We have a team that is ready to work until we see a better world, 
+            a world where every problem has a solution and every solution needed has a multitude that can provide them. 
+
+            <p><strong>Technology is for all, and we have made it our priority and a point of duty to take it to everyone.</strong></p>
                     <div class="row pt-3 mx-0">
                         <div class="col-3 px-0">
-                            <div class="bg-success text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">Available<span class="d-block">Subjects</span></h6>
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">10</h1>
+                                <h6 class="text-uppercase text-dark">Businesses<span class="d-block">Built</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
-                            <div class="bg-primary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">Online<span class="d-block">Courses</span></h6>
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">6</h1>
+                                <h6 class="text-uppercase text-dark">Online<span class="d-block">Courses</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
-                            <div class="bg-secondary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">Skilled<span class="d-block">Instructors</span></h6>
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">5</h1>
+                                <h6 class="text-uppercase text-dark">Skilled<span class="d-block">Instructors</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
-                            <div class="bg-warning text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">Happy<span class="d-block">Students</span></h6>
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">102</h1>
+                                <h6 class="text-uppercase text-dark">Happy<span class="d-block">Clients</span></h6>
                             </div>
                         </div>
                     </div>
@@ -200,7 +93,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    About End -->
 
 
     <!-- Feature Start -->
@@ -249,104 +142,12 @@
             </div>
         </div>
     </div>
+
     <!-- Feature Start -->
 
 
     <!-- Courses Start -->
-    <div class="container-fluid px-0 py-5" id="our-course">
-        <div class="row mx-0 justify-content-center pt-5">
-            <div class="col-lg-6">
-                <div class="section-title text-center position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
-                    <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
-                </div>
-            </div>
-        </div>
-        <div class="">
-                <div class="cards">
-                   
-                    <a href="#register">
-                        <div class="card-items bg-primary" style="background-color: rgb(156, 194, 18);">
-                            <h2>HTML/CSS/BOOTSTRAP</h2>
-                        </div>
-                    </a>
-              
-
-                <a href="#register">
-                    <div class="card-items bg-yellow" style="background-color: rgb(156, 194, 18);">
-                        <h2>FRONTEND (REACT JS)</h2>
-                    </div>
-                </a>
-                    
-                   <a href="#register">
-                        <div class="card-items bg-secondary">
-                            <h2>PYTHON</h2>
-                        </div>
-                   </a>
-
-                    
-                </div>
-
-                <div class="cards">
-                    <a href="#register">
-                        <div class="card-items" style="background-color: rgb(70, 167, 134);">
-                            <h2>DATA SCIENCE</h2>
-                        </div>
-                    </a>
-
-                    <a href="#register">
-                        <div class="card-items" style="background-color: rgb(103, 52, 151);">
-                            <h2>PYTHON WEB DEVELOPMENT</h2>
-                        </div>
-                    </a>
-
-                    <a href="#register">
-                        <div class="card-items bg-dark">
-                            <h2>DATA ANALYSIS</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-           
-        </div>
-        <div class="row justify-content-center bg-image mx-0 mb-5" id="register">
-            <div class="col-lg-6 py-5">
-                <div class="bg-white p-5 my-5">
-                    <h1 class="text-center mb-4">30% Off For New Students</h1>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <select class="custom-select bg-light border-0 px-3" style="height: 60px;">
-                                        <option selected>Select A courses</option>
-                                        <option value="1">courses 1</option>
-                                        <option value="2">courses 1</option>
-                                        <option value="3">courses 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign Up Now</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Courses End -->
+        <!-- Courses End -->
 
 
     <!-- Team Start 
@@ -422,7 +223,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+    <div class="container-fluid bg-image py-5" style="margin: 90px 0;" id="testimonial">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
@@ -454,6 +255,34 @@
                                     <h5>Student Name</h5>
                                     <span>Web Design</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row pt-3 mx-0">
+                        <div class="col-3 px-0">
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">10</h1>
+                                <h6 class="text-uppercase text-dark">Businesses<span class="d-block">Built</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">6</h1>
+                                <h6 class="text-uppercase text-dark">Online<span class="d-block">Courses</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">5</h1>
+                                <h6 class="text-uppercase text-dark">Skilled<span class="d-block">Instructors</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-white text-center p-4">
+                                <h1 class="text-dark" data-toggle="counter-up">102</h1>
+                                <h6 class="text-uppercase text-dark">Happy<span class="d-block">Clients</span></h6>
                             </div>
                         </div>
                     </div>
@@ -505,20 +334,21 @@
                         <h1 class="display-4">Send Us A Message</h1>
                     </div>
                     <div class="contact-form">
-                        <form>
+                        <form method="POST" action="">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "name" placeholder="Your Name" required="required">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "email" placeholder="Your Email" required="required">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
+                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "subject" placeholder="Subject" required="required">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" name="message" placeholder="Message" required="required"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
@@ -533,94 +363,14 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
-                    </a>
-                    <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam est, tempor rebum ipsum sit ea tempor stet et consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">Newsletter</h3>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary px-4">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Our Courses</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.
-                    </p>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
-    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
-    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
-    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
-
-    <!-- Template Javascript -->
-    <script src="{% static 'js/main.js' %}"></script>
-</body>
-
-</html>
+        
+    
+    
+    
+{% endblock %}

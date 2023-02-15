@@ -1,0 +1,155 @@
+#about, #courses, #contact{
+            color: rgb(58, 57, 57);
+            font-size: 15px;
+        }
+        #about:hover, #courses:hover, #contact:hover{
+            color: #F14D5D;
+        }
+
+        #nav-active{
+            color: rgb(58, 57, 57) ;
+            font-size: 15px;
+        }
+
+        #nav-active:hover{
+            color: #F14D5D;
+        }
+
+        .cards{
+            text-align: center; width:65%; margin: 20px; display: flex; color: white;
+            margin-left: 12%;
+          }
+          
+          .card-items{
+            max-width: 320px;
+            min-width: 320px;
+            min-height: 150px;;
+            border-radius: 10px; 
+            margin-right:40px;
+            margin-bottom: 40px;
+            padding: 70px 20px 30px 20px;
+          }
+
+         .card-items:hover{
+            background-color: aquamarine;
+         }
+
+        .card-items h2{
+            color: white;
+            font-size: 19px;
+          }
+        
+        .card-items h2:hover{
+            color: black;
+        }
+        
+        .cards a:hover{
+            text-decoration: none;
+        }
+
+        .messages{
+            background-color: aquamarine;
+            padding: 20px;
+        }
+
+    /*------------  Details Page -------------*/
+    
+         #main-doc{
+               display:flex;
+               max-width: 100%;
+               width:95%;
+               margin-top: 40px;
+               margin-left: 20px;
+               font-size:16px;
+             }
+             #main-body
+            {
+                display:flex;
+                flex-direction:column;
+                width:80%;
+                padding:20px;
+                align-self:flex-start;
+                background:#fcfcfc;
+              
+               font-size:16px;
+               }
+
+            .toggle-btn{
+                width: 35px;
+                position: absolute;
+                left: 20px;
+                top: 170px;
+                display: none;
+            }
+
+            .toggle-btn span{
+                display: inline-block;
+                width: 100%;
+                height: 2px;
+                background-color: black;
+                float: left;
+                margin-bottom: 8px;
+                
+
+            }
+           
+            #navbar{
+                
+                width:20%;
+                display:flex;
+                flex-direction:column;
+                /* background:#cccccc; */
+                font-size:16px;
+                margin-bottom: 0px;
+                }
+            
+            #navbar header{
+                padding-top: 20px;
+                padding-left: 10px;
+            }
+
+            #navbar ul{
+                padding-left: 0px;
+                padding-top: 30px;
+            }
+             #navbar ul li{
+               list-style-type:none;
+               padding:10px;
+               border-bottom:1px solid white;
+             
+            }
+            #navbar header h4{
+               text-align:left;
+               color: white;
+            }
+            #navbar a{
+              text-decoration:none;
+              color: white;
+              }
+            /* MOBILE Layout */
+            @media(max-width:991px)
+            {
+            #main-body{
+             background: white;
+             }
+
+             .toggle-btn{
+                display: block;
+             }
+             #navbar{
+                display: none;
+                margin-top: 30px;
+                padding-top: 20px;
+                width: 90%;
+             }
+
+             #navbar.show{
+                display:block;
+             }
+
+             #main-doc{
+                display: block;
+                flex-direction: row;
+             }
+             }
+         
