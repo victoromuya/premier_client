@@ -145,18 +145,30 @@
         document.getElementById('introduction').setAttribute('style', 'display:show'); 
         document.getElementById('schedule').setAttribute('style', 'display:none'); 
         document.getElementById('payment').setAttribute('style', 'display:none'); 
+
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+        });
     }  
 
     function viewSchedule() { 
         document.getElementById('schedule').setAttribute('style', 'display:show'); 
         document.getElementById('payment').setAttribute('style', 'display:none'); 
         document.getElementById('introduction').setAttribute('style', 'display:none'); 
+
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+        });
     }  
 
     function viewPayment() { 
         document.getElementById('payment').setAttribute('style', 'display:show'); 
         document.getElementById('schedule').setAttribute('style', 'display:none'); 
         document.getElementById('introduction').setAttribute('style', 'display:none'); 
+
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+        });
     }  
 
     function myfunction(){
@@ -169,6 +181,8 @@
        
         document.getElementById("courseid").selectedIndex = "6";
     }
+
+    
 
 </script>
 

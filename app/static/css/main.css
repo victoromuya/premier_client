@@ -58,7 +58,6 @@
     display:flex;
     max-width: 100%;
     width:95%;
-    margin-top: 40px;
     margin-left: 20px;
     font-size:16px;
     }
@@ -70,25 +69,28 @@
     padding:20px;
     align-self:flex-start;
     background:#fcfcfc;
-    
+    margin-top:10%;
     font-size:16px;
     }
 
 .toggle-btn{
-    width: 35px;
+    width: 25px;
+    height: 20px;
     position: absolute;
     left: 20px;
     top: 170px;
     display: none;
+    background-color: black;
 }
 
 .toggle-btn span{
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     margin-bottom: 8px;
     float: left;
+    align-items: center;
 }
 
 .btoggle-btn{
@@ -115,6 +117,7 @@
     /* background:#cccccc; */
     font-size:16px;
     margin-bottom: 0px;
+    margin-top: 10%;
     }
 
 #navbar header{
@@ -146,9 +149,36 @@
 }
 
 .business-body{
-    max-width: 100%; align-items: center; padding-left:150px;
+    max-width: 100%; align-items: center; padding-left:200px;
 }
 
+.business-body a{
+    
+    text-decoration: none;
+}
+
+.business-body a:hover{
+    text-decoration: none;
+}
+
+.business-body h5{
+    color: rgb(141, 140, 140);
+}
+
+.business-body h5:hover{
+    color: #F14D5D;
+}
+
+
+.business-contact{
+    margin-left:150px; margin-top:60px;
+}
+
+.business-contact h2{
+    text-align:center;
+    padding-left: 30px;
+    margin-left: 0px;
+}
 
 
 /* MOBILE Layout */
@@ -165,6 +195,10 @@
 @media(max-width:991px)
 
 {
+    .business-contact h2{
+        text-align: center;
+        
+    }
 
     .btoggle-btn{
         width: 35px;
@@ -173,12 +207,16 @@
         top: 400px;
        
     }
-#main-body{
+    #main-body{
     background: white;
+    margin-top: 20%;
     }
 
     .toggle-btn{
-    display: block;
+        display: block;
+        left: 855px;
+        top: 120px;
+        position: absolute;
     }
 
     .btoggle-btn{
@@ -242,6 +280,18 @@
         top: 420px;
     }
 
+    .toggle-btn{
+        display: block;
+        left: 765px;
+        top: 120px;
+        position: absolute;
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 20%;
+        }
+
 }
 
 @media (max-width:768px){
@@ -250,6 +300,13 @@
         position: absolute;
         left: 370px;
         top: 420px;
+    }
+
+    .toggle-btn{
+        display: block;
+        left: 712px;
+        top: 120px;
+        position: absolute;
     }
 
 }
@@ -263,6 +320,13 @@
         top: 510px;
     }
 
+    .toggle-btn{
+        display: block;
+        left: 485px;
+        top: 120px;
+        position: absolute;
+    }
+
 }
 
 @media (max-width:414px){
@@ -271,7 +335,18 @@
         position: absolute;
         left: 190px;
         top: 640px;
-       
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 30%;
+        }
+
+    .toggle-btn{
+        display: block;
+        left: 355px;
+        top: 120px;
+        position: absolute;
     }
 
 }
@@ -291,6 +366,22 @@
         padding: 0;
     }
 
+    .toggle-btn{
+        width: 35px;
+        left: 330px;
+        position: absolute;
+        top: 128px;
+    }
+
+}
+
+@media (max-width:375px){
+    .toggle-btn{
+        width: 35px;
+        left: 315px;
+        position: absolute;
+        top: 128px;
+    }
 }
 
 @media (max-width:360px){
@@ -299,8 +390,19 @@
         position: absolute;
         left: 165px;
         top: 820px;
-        
     }
+
+    .toggle-btn{
+        width: 35px;
+        left: 310px;
+        position: absolute;
+        top: 138px;
+    }
+
+    #main-body{
+        background: white;
+        margin-top: 40%;
+        }
 
     .business-header{
         max-width: 100%;
@@ -311,6 +413,11 @@
 }
 
 @media (max-width:280px){
+
+    #main-body{
+        background: white;
+        margin-top: 60%;
+        }
     .business-header{
         max-width: 100%;
         margin-top: 10%;
@@ -322,7 +429,13 @@
         position: absolute;
         left: 125px;
         top: 1190px;
-      
+    }
+
+    .toggle-btn{
+        width: 35px;
+        position: absolute;
+        left: 225px;
+        top: 138px;
     }
 }
 

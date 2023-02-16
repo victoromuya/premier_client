@@ -39,67 +39,69 @@
 
 <div class="business-body">
     <div class="container align-items-center" 
-        style="height: 200px; margin-bottom: 20px;">
+        style="height: 200px; margin-bottom: 20px; ">
     <div class="row d-flex flex-row" style="width: 40%; align-items: center;">
-        <div class="bg-light d-flex flex-row justify-content-center px-5" style="height: 200px; margin-bottom: 20px;">
-            <div class="flex-column align-items-center mb-5 mt-5" 
-            style="margin-right: 40px; border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white mr-4">
-                    <i class="fa fa-2x fa-desktop text-black"></i>
+        <div class="bg-primary d-flex flex-row justify-content-center px-5" style="height: 200px; margin-bottom: 20px;">
+            
+            <a href="#contact" onclick="web_enquiry();">
+                <div class="flex-column align-items-center mb-5 mt-5" 
+                style="margin-right: 70px; border: 0px solid black; text-align: center; align-items: center;">
+                    <div class="btn-icon bg-white mr-1">
+                        <i class="fa fa-2x fa-desktop text-secondary"></i>
+                    </div>
+                    <div class="mt-2">
+                        <h5 id="value1">Website</h5>
+                    </div>
                 </div>
-                <div class="mt-2">
-                    <h5>Website</h5>
-                </div>
-            </div>
+            </a>
 
-            <div class="flex-column align-items-center mb-5 mt-5" 
-            style="margin-right: 40px; border: 0px solid black; text-align: center; align-items: center;">
+            <a href="#contact" onclick="mobile_enquiry();">
+                <div class="flex-column align-items-center mb-5 mt-5" 
+            style="margin-right: 70px; border: 0px solid black; text-align: center; align-items: center;">
                 <div class="btn-icon bg-white mr-4 ml-3">
-                    <i class="fa fa-2x fa-mobile text-black"></i>
+                    <i class="fa fa-2x fa-mobile text-secondary"></i>
                 </div>
                 <div class="mt-2">
-                    <h5>Mobile app</h5>
+                    <h5 id="value2">Mobile app</h5>
                 </div>
             </div>
+            </a>
 
-            <div class="flex-column align-items-center mb-5 mt-5" style="margin-right: 50px;
+            <a href="#contact" onclick="data_enquiry();">
+                <div class="flex-column align-items-center mb-5 mt-5" style="margin-right: 80px;
             border: 0px solid black; text-align: center; align-items: center;">
                 <div class="btn-icon bg-white mr-4 ml-3">
-                    <i class="fa fa-2x fa-chart-line text-black"></i>
+                    <i class="fa fa-2x fa-chart-line text-secondary"></i>
                 </div>
                 <div class="mt-2">
-                    <h5>Data analysis</h5>
+                    <h5 id="value3">Data analysis</h5>
                 </div>
             </div>
+            </a>
 
-            <div class="flex-column align-items-center mb-5 mt-5" 
-            style="margin-right: 50px; border: 0px solid black; text-align: center; align-items: center;">
+            <a href="#contact" onclick="seo_enquiry();">
+                <div class="flex-column align-items-center mb-5 mt-5" 
+            style="margin-right: 80px; border: 0px solid black; text-align: center; align-items: center;">
                 <div class="btn-icon bg-white mr-2">
-                    <i class="fa fa-2x fa-search text-black"></i>
+                    <i class="fa fa-2x fa-search text-secondary"></i>
                 </div>
                 <div class="mt-2 ">
-                    <h5>SEO</h5>
+                    <h5 id="value4">SEO</h5>
                 </div>
             </div>
+            </a>
 
-            <div class="flex-column align-items-center mb-5 mt-5" 
-            style="margin-right: 40px; border: 0px solid black; text-align: center; align-items: center;">
+            <a href="#contact" onclick="staff_enquiry();">
+                <div class="flex-column align-items-center mb-5 mt-5" 
+            style=" border: 0px solid black; text-align: center; align-items: center;">
                 <div class="btn-icon bg-white mr-4 ml-3">
-                    <i class="fa fa-2x fa-chalkboard text-black"></i>
+                    <i class="fa fa-2x fa-chalkboard-teacher text-secondary"></i>
                 </div>
                 <div class="mt-2">
-                    <h5>Staff Training</h5>
+                    <h5 id="value5">Staff Training</h5>
                 </div>
             </div>
-
-            <div class="flex-column align-items-center mb-5 mt-5" style="border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white mr-4 ml-4">
-                    <i class="fa fa-2x fa-chalkboard-teacher text-black"></i>
-                </div>
-                <div class="mt-2">
-                    <h5>School Training</h5>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
@@ -110,57 +112,69 @@
     <div class="container align-items-center bg-white">
     <div class="column d-flex flex-column">
         <div class="bg-light d-flex flex-row justify-content-center px-5 pt-5" style="width: 100%;">
+
+        <a href="#contact" onclick="web_enquiry();">
             <div class="flex-column align-items-center mb-5 p-3 mr-3" style="border: 0px solid black; text-align: center; align-items: center;">
+                
                 <div class="btn-icon bg-white ">
                     <i class="fa fa-2x fa-desktop text-black"></i>
                 </div>
                 <div class="mt-2">
-                    <h5 style="font-size: 16px;">Website</h5>
+                    <h5 style="font-size: 16px;" id="value1">Website</h5>
                 </div>
             </div>
+        </a>
 
-            <div class="flex-column align-items-center mb-5 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white mr-4 ml-3">
-                    <i class="fa fa-2x fa-mobile text-black"></i>
+            <a href="#contact" onclick="mobile_enquiry();">
+                <div class="flex-column align-items-center mb-5 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
+                    <div class="btn-icon bg-white mr-4 ml-3">
+                        <i class="fa fa-2x fa-mobile text-black"></i>
+                    </div>
+                    <div class="mt-2">
+                        <h5 style="font-size: 16px;" id="value2">Mobile app</h5>
+                    </div>
                 </div>
-                <div class="mt-2">
-                    <h5 style="font-size: 16px;">Mobile app</h5>
-                </div>
-            </div>
+            </a>
         </div>
 
         <div class="bg-light d-flex flex-row justify-content-center px-5" style="width: 100%;">
 
-            <div class="flex-column align-items-center mb-5 p-3 mr-3" style="border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white">
-                    <i class="fa fa-2x fa-chart-line text-black"></i>
+            <a href="#contact" onclick="data_enquiry();">
+                <div class="flex-column align-items-center mb-5 p-3 mr-3" style="border: 0px solid black; text-align: center; align-items: center;">
+                    <div class="btn-icon bg-white">
+                        <i class="fa fa-2x fa-chart-line text-black"></i>
+                    </div>
+                    <div class="mt-2 ml-0">
+                        <h5 style="font-size: 16px;" id="value3">Data analysis</h5>
+                    </div>
                 </div>
-                <div class="mt-2 ml-0">
-                    <h5 style="font-size: 16px;">Data analysis</h5>
-                </div>
-            </div>
+            </a>
 
-            <div class="flex-column align-items-center mb-5 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white">
-                    <i class="fa fa-2x fa-search text-black"></i>
+            <a href="#contact" onclick="seo_enquiry();">
+                <div class="flex-column align-items-center mb-5 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
+                    <div class="btn-icon bg-white">
+                        <i class="fa fa-2x fa-search text-black"></i>
+                    </div>
+                    <div class="mt-2 ">
+                        <h5 style="font-size: 16px;" id="value4">SEO</h5>
+                    </div>
                 </div>
-                <div class="mt-2 ">
-                    <h5 style="font-size: 16px;">SEO</h5>
-                </div>
-            </div>
+            </a>
         </div>
 
         <div class="bg-light d-flex flex-row justify-content-center px-3" style="width: 100%;">
 
-            <div class="flex-column align-items-center mb-5 mr-3 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
-                <div class="btn-icon bg-white">
-                    <i class="fa fa-2x fa-chalkboard text-black"></i>
+            <a href="#contact" onclick="staff_enquiry();">
+                <div class="flex-column align-items-center mb-5 mr-3 p-3" style="border: 0px solid black; text-align: center; align-items: center;">
+                    <div class="btn-icon bg-white">
+                        <i class="fa fa-2x fa-chalkboard-teacher text-black"></i>
+                    </div>
+                    <div class="mt-2">
+                        <h5 style="font-size: 16px;" id="value5">Staff Training</h5>
+                    </div>
                 </div>
-                <div class="mt-2">
-                    <h5 style="font-size: 16px;">Staff Training</h5>
-                </div>
-            </div>
-
+            </a>
+<!--
             <div class="flex-column align-items-center mb-5 p-2" style="border: 0px solid black; text-align: center; align-items: center;">
                 <div class="btn-icon bg-white mr-4 ml-4">
                     <i class="fa fa-2x fa-chalkboard-teacher text-black"></i>
@@ -169,7 +183,7 @@
                     <h5 style="font-size: 16px;">School Training</h5>
                 </div>
             </div>
-
+-->
             
         </div>
     </div>
@@ -239,40 +253,46 @@
 
   <!--
 
-    <div class="business-contact container py-2" style="margin-left:150px; margin-top:60px;">
-    <div class="row align-items-center">
+    
+  -->
 
-            <div class="col-lg-11">
-                <div class="section-title position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
-                    <h2 class="display-5" style="text-align:center;">Send Us A Message</h2>
-                </div>
-                <div class="contact-form">
-                    <form method="POST" action="">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-6 form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "name" placeholder="Your Name" required="required">
+  <div class="business-contact" id="contact">
+
+    <div class="container py-2">
+        <div class="row align-items-center">
+    
+                <div class="col-lg-10">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
+                        <h2 class="display-5" >Send Us A Message</h2>
+                    </div>
+                    <div class="contact-form">
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "name" placeholder="Your Name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "email" placeholder="Your Email" required="required">
+                                </div>
                             </div>
-                            <div class="col-6 form-group">
-                                <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "email" placeholder="Your Email" required="required">
+                            <div class="form-group">
+                                <input type="text" id="subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "subject" placeholder="Subject" required="required">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" name = "subject" placeholder="Subject" required="required">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" name="message" placeholder="Message" required="required"></textarea>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" name="message" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  -->
+
+  </div>
 
 
   
@@ -280,7 +300,31 @@
     function myfunction(){
         navbar = document.getElementById('bus-body');
         navbar.classList.toggle("show")
-    
+    }
+
+    function web_enquiry(){
+        const name = document.getElementById("value1").innerHTML
+        document.getElementById("subject").setAttribute('value', name) 
+    }
+
+    function mobile_enquiry(){
+        const name = document.getElementById("value2").innerHTML
+        document.getElementById("subject").setAttribute('value', name) 
+    }
+
+    function data_enquiry(){
+        const name = document.getElementById("value3").innerHTML
+        document.getElementById("subject").setAttribute('value', name) 
+    }
+
+    function seo_enquiry(){
+        const name = document.getElementById("value4").innerHTML
+        document.getElementById("subject").setAttribute('value', name) 
+    }
+
+    function staff_enquiry(){
+        const name = document.getElementById("value5").innerHTML
+        document.getElementById("subject").setAttribute('value', name) 
     }
 </script>
 
