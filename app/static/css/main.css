@@ -1,6 +1,6 @@
 #about, #courses, #contact{
         color: rgb(58, 57, 57);
-        font-size: 15px;
+        font-size: 16px;
     }
     #about:hover, #courses:hover, #contact:hover{
         color: #F14D5D;
@@ -8,16 +8,21 @@
 
     #nav-active{
         color: rgb(58, 57, 57) ;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     #nav-active:hover{
         color: #F14D5D;
     }
 
+    #course-title{
+        margin-top: 10%;
+        margin-left: 0px;
+    }
+
     .cards{
         text-align: center; width:65%; margin: 20px; display: flex; color: white;
-        margin-left: 12%;
+        margin-left: 20%;
         }
         
         .card-items{
@@ -183,6 +188,13 @@
 
 /* MOBILE Layout */
 
+@media (max-width:1280px){
+    .cards{
+        text-align: center; width:60%; 
+        margin: 10px; 
+        padding-left: 100px;
+        }
+    }
 
 @media (max-width:1024px){
     .business-body{
@@ -190,16 +202,61 @@
         align-items: center;
     }
 
+    .cards{
+        text-align: center; width:60%; 
+        margin: 10px; 
+        padding-left: 60px;
+        }
+    .card-items{
+        max-width: 280px;
+        min-width: 280px;
+        min-height: 150px;
+        max-height: 150px;
+        border-radius: 10px; 
+        margin-right:20px;
+        margin-bottom: 40px;
+        padding: 60px 20px 30px 20px;
+        }
+
 }
 
-@media(max-width:991px)
+@media(max-width:991px){
 
-{
-    .business-contact h2{
-        text-align: center;
-        
+.card-control{
+    display: flex;
     }
 
+.cards{
+    text-align: center; width:75%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 60px;
+    }
+
+.card-items{
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 100px;
+    max-height: 100px;
+    border-radius: 10px; 
+    margin-right:20px;
+    margin-bottom: 40px;
+    padding: 45px 20px 30px 20px;
+    }
+
+    .card-items h2{
+        color: white;
+        font-size: 12px;
+        }
+
+
+
+.business-contact h2{
+ text-align: center;
+        
+}
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -269,6 +326,10 @@
         margin-left: 0;
         padding-left: 0;
     }
+
+    .services h3{
+        padding-left: 0;
+    }
     
 }
 
@@ -295,6 +356,16 @@
 }
 
 @media (max-width:768px){
+
+    .cards{
+        text-align: center; width:75%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 40px;
+        }
+
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -313,6 +384,31 @@
 
 
 @media (max-width:540px){
+
+    .cards{
+        text-align: center; width:40%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 20px;
+        }
+    
+    .card-items{
+        max-width: 200px;
+        min-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 10px; 
+        margin-right:3px;
+        margin-bottom: 40px;
+        padding: 90px 10px 10px 10px;
+        }
+    .card-items h2{
+        color: white;
+        font-size: 14px;
+        }
+
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -330,6 +426,27 @@
 }
 
 @media (max-width:414px){
+
+.cards{
+    text-align: center; width:40%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 5px;
+    }
+
+.card-items{
+    max-width: 160px;
+    min-width: 160px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px; 
+    margin-right:3px;
+    margin-bottom: 40px;
+    padding: 90px 10px 10px 10px;
+}
+
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -352,6 +469,27 @@
 }
 
 @media (max-width:393px){
+
+.cards{
+    text-align: center; width:40%; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 5px;
+    }
+
+.card-items{
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px; 
+    margin-right:3px;
+    margin-bottom: 40px;
+    padding: 90px 10px 10px 10px;
+    }
+    
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -376,6 +514,16 @@
 }
 
 @media (max-width:375px){
+
+    .cards{
+        text-align: center; width:35%; 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 1px;
+        }
+
     .toggle-btn{
         width: 35px;
         left: 315px;
@@ -385,6 +533,10 @@
 }
 
 @media (max-width:360px){
+    #course-title{
+        margin-top: 20%;
+    }
+
     .btoggle-btn{
         width: 35px;
         position: absolute;
@@ -413,6 +565,35 @@
 }
 
 @media (max-width:280px){
+
+    #about, #courses, #contact, #nav-active{
+        color: rgb(58, 57, 57);
+        font-size: 12px;
+    }
+
+    #course-title{
+        margin-top: 20%;
+    }
+    .cards{
+        text-align: center; width:40%; 
+        margin: 10px; 
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 1px;
+        }
+    
+    .card-items{
+        max-width: 120px;
+        min-width: 120px;
+        min-height: 200px;
+        max-height: 200px;
+        border-radius: 10px; 
+        margin-right:7px;
+        margin-bottom: 40px;
+        padding: 90px 10px 10px 10px;
+        }
+    
 
     #main-body{
         background: white;

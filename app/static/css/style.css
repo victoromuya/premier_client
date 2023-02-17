@@ -4055,14 +4055,14 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.disabled {
   color: #fff;
-  background-color: transparent;
+  background-color: white;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color:#fff;
-  background-color: transparent;
+  background-color: white;
   border-color: #dee2e6 #dee2e6 #FFFFFF;
 }
 
@@ -4079,7 +4079,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: transparent;
+  background-color: white;
 }
 
 .nav-fill > .nav-link,
@@ -4989,6 +4989,8 @@ a.badge-dark:focus, a.badge-dark.focus {
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
+  height: 800px;
+  
 }
 
 @media (min-width: 576px) {
